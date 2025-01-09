@@ -1,0 +1,131 @@
+.streamer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.streamer-card img {
+    border-radius: 50%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.banner-content {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner-content span {
+    
+    font-size: 1rem;
+}
+
+.banner-content button {
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+    }
+}
+
+.reopen-banner-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #450F93; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none; 
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+}
+
+.game-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.clip-thumbnail img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.game-section {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .streamer-card {
+        text-align: left;
+    }
+    
+    .clip-thumbnail {
+        margin-bottom: 15px;
+    }
+}
+
+.reload-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #450F93;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease;
+}
+
+.reload-banner.show {
+    animation: slideIn 0.3s forwards;
+}
+
+.reload-banner.hide {
+    animation: slideOut 0.3s forwards;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .reopen-banner-btn {
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%); 
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}

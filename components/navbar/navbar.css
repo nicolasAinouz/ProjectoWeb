@@ -1,0 +1,37 @@
+.nav-link.active {
+    color: #ffffff !important; 
+    background-color: #450F93 !important; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font-weight: bold; 
+    text-decoration: underline; 
+  }
+  
+  .nav-link:hover {
+    background-color: #450F93;
+  }
+
+  .purple{
+    background-color: #450F93;
+}
+
+.navbar-nav li a {
+  color: white;
+}
+
+nav button {
+  background-color: #450F93;
+
+} 
+.navbar-toggler {
+  color: #450F93;
+  border: none;
+
+} 
+
+
+
+.navbar-name {
+  color: white;
+  font-weight: bold;
+}

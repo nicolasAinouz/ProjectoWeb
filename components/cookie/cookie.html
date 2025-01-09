@@ -1,0 +1,27 @@
+<div id="cookie-overlay" class="d-flex flex-column justify-content-center align-items-center">
+    <div id="cookie-message" class="bg-white p-4 rounded shadow text-center">
+      <p>This site uses cookies to enhance your experience. By continuing, you agree to our cookie policy.</p>
+      <button id="accept-cookies" class="btn btn-primary mt-3">Accept</button>
+    </div>
+</div>
+<style>
+    #cookie-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); 
+      backdrop-filter: blur(8px); 
+      z-index: 9999;
+      display: none;
+    }
+  
+    #cookie-message {
+      max-width: 500px;
+    }
+  
+    #cookie-overlay.hidden {
+    display: none !important;
+  }
+</style>
